@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Form Filler",
+  "version": "1.0",
+  "description": "Fills online forms with your saved data.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
