@@ -1,4 +1,6 @@
-so ive had to fill in a lot of very similar job application forms
+![Project Screenshot](example.png)
+
+So I've had to fill in a lot of very similar job application forms
 
 # Form Filler Chrome Extension
 
