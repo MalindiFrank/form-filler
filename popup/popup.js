@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const fieldDiv = document.createElement('div');
     fieldDiv.className = 'field';
     fieldDiv.innerHTML = `
-      <input type="text" class="key" placeholder="Field Name" value="${field.key}">
-      <input type="text" class="value" placeholder="Field Value" value="${field.value}">
-      <button class="delete-field">Delete</button>
+      <input type="text" class="key" placeholder="Enter your ${field.key}" value="${field.key}">
+      <input type="text" class="value" placeholder="Enter your ${field.key}" value="${field.value}">
+      <button class="delete-field"> X </button>
     `;
     fieldsContainer.appendChild(fieldDiv);
 

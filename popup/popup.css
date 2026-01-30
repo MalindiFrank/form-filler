@@ -1,34 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
-  width: 300px;
-  padding: 10px;
+  width: max-content;
+  padding: 1.3rem;
 }
 
 h1 {
   text-align: center;
-  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 #fields-container {
-  margin-bottom: 10px;
+  display: grid;
+  margin-bottom: 1rem;
+  gap: .5rem;
 }
 
 .field {
   display: flex;
-  margin-bottom: 5px;
+  gap: .5rem;
+
+  input {
+    padding: .2rem;
+    border: .1rem solid grey;
+  }
+  button {  border: unset;  }
 }
 
-.field input {
-  flex-grow: 1;
-  margin-right: 5px;
+.action-buttons button {
+  background: none;
+  border-radius: 6px;
+  padding: .4rem .6rem;
 }
 
 button {
   cursor: pointer;
+  padding: .3em;
+  border: .1rem solid grey;
 }
 
-#add-field, #save-profile {
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 5px;
+/* Colors */
+
+h1 {  color: green; }
+.field button {
+  color: red;
+  border-color: red;
+}.action-buttons button {
+  border-color: green;
 }
